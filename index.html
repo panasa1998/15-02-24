@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        /* img{
+            height: 100%;
+            width: 100%;
+        } */
+      @media screen and (min-width:300px) and (max-width:480px) {
+          .container{
+            background-color: red;
+              display: none !important;
+          }
+          .main{    
+              display: none !important;
+              
+          }
+      }
+      @media screen and (min-width:481px) and (max-width:720px) {
+        .grid{
+            display: none !important;
+        }
+        .container{
+            display: none !important;
+        }
+      }
+      @media screen and (min-width:721px) and (max-width:1080px) {
+        .grid{
+            display: none !important;
+        }
+        .main{
+            display: none !important;
+        }
+      }
+      .grid{
+              border: 1px solid black;
+              height: 400px;
+              width: 400px;
+              background-color: orange;
+              display: grid;
+              justify-content: center;
+              align-content: center;
+              grid-template-rows: repeat(5,50px);
+              gap: 20px;
+          }
+          .gr{
+              background-color: green;
+              display: grid;
+              justify-content: center;
+              align-content: center;
+              width: 300px;
+
+          }
+      .main{
+          border: 1px solid black;
+          padding: 20px;
+          display: grid;
+          grid-template-rows: repeat(5,50px);
+          gap: 10px;
+          width: 80%;
+          height: 90vh;
+      }
+      .cd1{
+          background-color: red;
+          grid-column-start: 2;
+          grid-column-end: 6;
+
+      }
+      .cd2{
+          background-color: red;
+          grid-row-start: 1;
+          grid-row-end: 6;
+          height: 500px;
+      }
+      .cd3{
+          background-color: red;
+          grid-row-start: 2;
+          grid-row-end: 6;
+          height: 440px;
+
+      }
+      .cd4{
+          background-color: red;
+          grid-row-start: 2;
+          grid-row-end: 6;
+          height: 440px;
+      }
+      .cd5{
+          background-color: red;
+          grid-row-start: 2;
+          grid-row-end: 6;
+          height: 440px;
+      }
+      .cd6{
+          background-color: red;
+          grid-row-start: 2;
+          grid-row-end: 6;
+          height: 440px;
+      }
+      .container{
+          border: 1px solid black;
+          background-color: steelblue;
+          padding: 50px;
+          gap: 10px;
+          display: grid;
+          grid-template-rows: repeat(5,100px);
+          height: 300px;
+          width: 90%;
+      }
+      .gd1{
+          background-color: lightskyblue;
+          display: grid;
+          justify-content: center;
+          align-content: center;
+          font-size: 25px;
+          grid-column-start: 1;
+          grid-column-end: 6;
+
+      }
+      .gd2{
+          background-color: lightskyblue;
+          display: grid;
+          justify-content: center;
+          align-content: center;
+          font-size: 25px;
+          grid-row-start: 2;
+          grid-row-end: 4;
+      }
+      .gd3{
+          background-color: lightskyblue;
+          display: grid;
+          justify-content: center;
+          align-content: center;
+          font-size: 25px;
+          grid-column-start: 2;
+          grid-column-end: 4;
+      }
+      .gd4{
+          background-color: lightskyblue;
+          display: grid;
+          justify-content: center;
+          align-content: center;
+          font-size: 25px;
+          grid-column-start: 4;
+          grid-column-end: 6;
+      }
+      .gd5{
+          background-color: lightskyblue;
+          display: grid;
+          justify-content: center;
+          align-content: center;
+          font-size: 25px;
+          grid-column-start: 2;
+          grid-column-end: 6; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="gr">one</div>
+      <div class="gr">two</div>
+      <div class="gr">three</div>
+      <div class="gr">four</div>
+      <div class="gr">five</div>
+    </div>
+    <div class="main">
+      <div class="cd cd1">
+        one
+      </div>
+      <div class="cd cd2">
+        two
+      </div>
+      <div class="cd cd3">
+        three
+      </div>
+      <div class="cd cd4">
+        four
+      </div>
+      <div class="cd cd5">
+        five
+      </div>
+      <div class="cd cd6">
+        six
+      </div>
+    </div>
+    <div class="container">
+      <div class="gd1">Header</div>
+      <div class="gd2">Menu</div>
+      <div class="gd3">Main</div>
+      <div class="gd4">Right</div>
+      <div class="gd5">Footer</div>
+    </div>
+  </body>
+</html>
